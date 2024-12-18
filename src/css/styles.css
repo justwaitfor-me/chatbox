@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body,
+html {
+  background-image: url(../assets/backgrounds/background_gradient.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: "Barlow", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+header nav {
+  border-radius: 5px;
+  margin: 10px;
+  color: #fff;
+}
+
+header {
+  padding: 10px;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .space-wrapper {
+    height: 80px !important;
+  }
+
+  .card {
+    padding: 10px;
+    margin-bottom: 50px;
+    width: 90%;
+  }
+
+  #home {
+    .card-text {
+      background-color: rgba(255, 255, 255, 0.802);
+      border-radius: 5px;
+      padding: 3px;
+    }
+  }
+
+  #user {
+    min-height: 600px !important;
+  }
+}
+
+footer nav {
+  margin-top: 20px;
+
+  .card-group {
+    width: 100%;
+    .card-body {
+      text-align: center;
+
+      .card-text {
+        padding: 0;
+      }
+
+      ul li {
+        list-style: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 897px) {
+  #home {
+    min-height: 400px !important;
+
+    .sub-text {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #home {
+    min-height: 500px !important;
+    .card-img {
+      display: none;
+    }
+
+    .card-text strong {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 467px) {
+  #home {
+    min-height: 600px !important;
+    .card-img {
+      display: none;
+    }
+
+    .card-text strong {
+      display: none;
+    }
+  }
+}
